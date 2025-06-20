@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html"; // Redirect if not logged in
+  }
+</script>
+ <script>
+        function logout(){
+          localStorage.removeItem("loggedin");
+          Window.location.href ="login.html";
+        }
+       </script>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="archive.html">Archive</a>
+    
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <h2>Get In Touch</h2>
+      <p>We’d love to hear from you!</p>
+    </div>
+    <div class="two-columns">
+      <div class="main">
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="subject" placeholder="Subject" required>
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="side sidebar">
+        <h3>Contact Info</h3>
+        <p>Email: yvonne12@gmail.com</p>
+        <p>Phone: +254725788613</p>
+        <p>Location: Machakos, Kenya</p>
+      </div>
+    </div>
+</main>
+
+  <footer>
+    <p>&copy; Yvonne's Contact Page. All rights reserved.</p>
+   
+  </footer>
+
+
+  <script src="contact.js"></script>
+</body>
+</html>

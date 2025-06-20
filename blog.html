@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html"; // Redirect if not logged in
+  }
+</script>
+   <script>
+        function logout(){
+          localStorage.removeItem("loggedin");
+          Window.location.href ="login.html";
+        }
+       </script>
+</head>
+<body>
+  <header>
+    <h1>My Awesome Blog</h1>
+     <nav>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="archive.html">Archive</a>
+      
+    </nav>
+  </header>
+  </header>
+<main id="blog-posts"></main>
+
+<div style="text-align: center; margin: 1rem;">
+  <button onclick="prevPage()">Previous</button>
+  <span id="page-number">Page 1</span>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+  <footer>
+       <p>&copy; Yvonne's Contact Page. All rights reserved.</p>
+    
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
+
+
