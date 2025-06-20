@@ -3,7 +3,7 @@ const posts = [
     title: "How to Start Coding with AI",
     image: "images/ai-coding.jpg",
     preview: "Learn how to use AI tools like ChatGPT to speed up your coding process...",
-    link: "post 1.html"
+    link: "post1.html"
   },
 
   ,
@@ -11,7 +11,7 @@ const posts = [
     title: "Getting Started with Sass",
     image: "images/sass.jpg",
     preview: "Sass makes CSS more powerful with variables and functions. Let’s install it...",
-    link: "post 2.html"
+    link: "post2.html"
   },
   
 ];
